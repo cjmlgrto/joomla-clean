@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>THEME_NAME_HERE</name>
+	<creationDate>DATE_CREATED</creationDate>
+	<author>YOUR_NAME_HERE</author>
+	<copyright>Copyright © YOUR_NAME_HERE</copyright>
+	<authorEmail>YOUR_EMAIL_HERE</authorEmail>
+	<authorUrl>YOUR_WEBSITE_HERE</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[
+	<p>TEMPLATE_DESCRIPTION_IN_HTML_HERE</p>
+	]]></description>
+	<files>
+		<folder>css</folder>
+		<filename>index.php</filename>
+		<filename>readme.md</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<positions>
+		<position>menu</position>
+		<position>sidebar</position>
+	</positions>
+</extension>
