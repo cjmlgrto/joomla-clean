@@ -26,3 +26,5 @@
 10. Done! Ready to use.
 
 ## How this template works
+
+Browse through the files and discover what makes this bare-bones theme tick.
