@@ -24,3 +24,5 @@
 9. Open the folder as a project with your favorite text editor (mine's Atom)
 
 10. Done! Ready to use.
+
+## How this template works
