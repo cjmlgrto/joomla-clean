@@ -42,7 +42,7 @@ The following pages require the corresponding objects below:
     $post = $this->item;
 
 ### Get Method:
-    $post->parameter_name_here
+    $post->parameter_name_here;
 
 ### Available Parameters:
     id
@@ -70,6 +70,32 @@ The following pages require the corresponding objects below:
     tags
     text
     link
+
+## ``$post->params`` Object
+    $params = $post->params;
+
+### Get Method:
+    $params->get('parameter_name_here');
+
+### Available Parameters:
+#### Booleans:
+    access-view
+    access-edit
+    show_title
+    show_intro
+    show_category
+    show_parent_category
+    show_author
+    show_create_date
+    show_modify_date
+    show_publish_date
+    show_readmore
+    show_readmore_title
+    show_icons
+    show_print_icon
+    show_email_icon
+    show_hits
+
 
 ## ``$page`` Object
     $page = $this->params;
@@ -164,4 +190,10 @@ if ($number_of_pages > 1) :
   echo $this->pagination->getPagesCounter();
   echo $this->pagination->getPagesLinks();
 endif;
+```
+
+### Unique Post link
+For the ``$post`` Object
+```php
+$post_link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid, $this->item->language));
 ```
