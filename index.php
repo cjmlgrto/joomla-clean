@@ -17,7 +17,6 @@ defined('_JEXEC') or die;
 <head>
   <?php // render the Joomla head scripts and meta tags ?>
   <jdoc:include type="head"/>
-  <?php // render template css ?>
   <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css"/>
 </head>
 <body>
