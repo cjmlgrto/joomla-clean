@@ -12,7 +12,6 @@
 	]]></description>
 	<files>
 		<folder>css</folder>
-		<folder>html</folder>
 		<filename>index.php</filename>
 		<filename>readme.md</filename>
 		<filename>templateDetails.xml</filename>
