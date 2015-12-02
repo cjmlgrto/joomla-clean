@@ -135,30 +135,33 @@ The following pages require the corresponding objects below:
 
 ## Render Featured Posts
 For ``com_content/category/blog.php``
+```php
+$post_featured = $this->lead_items;
 
-    $post_featured = $this->lead_items;
-
-    foreach ($post_featured as &$item) :
-      $this->item = &$item;
-      echo $this->loadTemplate('item');
-    endforeach;
+foreach ($post_featured as &$item) :
+  $this->item = &$item;
+  echo $this->loadTemplate('item');
+endforeach;
+```
 
 ## Render Regular Posts
 For ``com_content/category/blog.php``
+```php
+$post_regular = $this->intro_items;
 
-    $post_regular = $this->intro_items;
-
-    foreach ($post_regular as &$item) :
-      $this->item = &$item;
-      echo $this->loadTemplate('item');
-    endforeach;
+foreach ($post_regular as &$item) :
+  $this->item = &$item;
+  echo $this->loadTemplate('item');
+endforeach;
+```
 
 ## Display Pagination
 For ``com_content/category/blog.php``
+```php
+$number_of_pages = $this->pagination->get('pages.total');
 
-  $number_of_pages = $this->pagination->get('pages.total');
-
-  if ($number_of_pages > 1) :
-    echo $this->pagination->getPagesCounter();
-    echo $this->pagination->getPagesLinks();
-  endif;
+if ($number_of_pages > 1) :
+  echo $this->pagination->getPagesCounter();
+  echo $this->pagination->getPagesLinks();
+endif;
+```
