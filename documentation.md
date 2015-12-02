@@ -33,9 +33,11 @@ Happy theming!
 ## Objects Guide
 
 The following pages require the corresponding objects below:
-- ``com_content/article/default.php`` --> POST, PAGE
-- ``com_content/category/blog_item.php`` --> POST
-- ``com_content/category/blog.php`` --> PAGE, CATEGORY
+- ``com_content/article/default.php`` → ``$post``, ``$page``
+- ``com_content/category/blog_item.php`` → ``$post``
+- ``com_content/category/blog.php`` → ``$page``, ``$category``
+- ``com_content/featured/default_item.php`` → ``$post``
+- ``com_content/featured/default.php`` → ``$page``
 
 
 ## ``$post`` Object

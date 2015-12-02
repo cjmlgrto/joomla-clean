@@ -4,7 +4,7 @@
   * THEME_NAME_HERE
   * Author: YOUR_NAME_HERE
   * Version: 1.0.0
-  * File purpose: template override for the cateogry:blog pages
+  * File purpose: template override for the category:blog pages
   *
   */
 
