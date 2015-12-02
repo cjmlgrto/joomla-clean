@@ -25,7 +25,7 @@ defined('_JEXEC') or die;
 
   <?php // render the Joomla "menu" module, IF there is one ?>
   <?php if ($this->countModules('menu')) : ?>
-    <jdoc:include type="modules" name="menu"/>
+    <jdoc:include type="modules" name="mendu"/>
   <?php endif; ?>
 
   <?php // render the Joomla page content ?>
