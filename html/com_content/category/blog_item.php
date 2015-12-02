@@ -14,12 +14,15 @@ defined('_JEXEC') or die;
 // abbreviate Joomla's post object
 $post = $this->item;
 
+// abbreviate Joomla's post link
+$post_link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid, $this->item->language));
+
 ?>
 
 <article id="<?php echo $post->id; ?>">
   <?php // render the post's title and link ?>
   <h1>
-    <a href="<?php echo $post->link; ?>">
+    <a href="<?php echo $post_link; ?>">
       <?php echo $post->title; ?>
     </a>
   </h1>
