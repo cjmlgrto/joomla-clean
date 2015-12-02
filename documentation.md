@@ -6,25 +6,28 @@ One of the most difficult things about creating templates for Joomla is finding 
 How does it work? Every file (found in the subfolders of the ``html`` folder in the Git Repo) is a template 'layout override'. And for every file, Joomla pulls variables from a variety of objects. (For a list of which files and their corresponding objects, please see the Objects Guide below).
 
 For example, if I want to create a template for every blog post item on the blog category page, I'd have to turn something like this:
-
-    <article>
-      <h1>{{TITLE HERE}}</h1>
-      <span>Written by {{AUTHOR}}</span>
-      {{CONTENT}}
-    </article>
-
+```html
+<article>
+  <h1>{{TITLE HERE}}</h1>
+  <span>Written by {{AUTHOR}}</span>
+  {{CONTENT}}
+</article>
+```
 into:
-
-    <?php $post = $this->item; ?>
-    <article>
-      <h1><?php echo $post->title; ?></h1>
-      <span>Written by <?php echo $post->author; ?></span>
-      <?php echo $post->fulltext; ?>
-    </article>
+```php
+<?php $post = $this->item; ?>
+<article>
+  <h1><?php echo $post->title; ?></h1>
+  <span>Written by <?php echo $post->author; ?></span>
+  <?php echo $post->fulltext; ?>
+</article>
+```
 
 And put that into the ``blog_item.php`` file. Notice in the first line, I call the ``$post`` object, required for the file to work.
 
 Happy theming!
+
+— [CJ Melegrito](http://mlgrto.com)
 
 
 ## Objects Guide
